@@ -2,11 +2,23 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	padding-block: 1em;
+}
+
+nav {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -16,10 +28,6 @@ body {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
-}
-
-.top-header .name {
-	font-size: 26px;
 }
 
 .nav ul {
@@ -71,38 +79,44 @@ body {
 	width: 100%;
 
 }
+
 #about-me {
-	flex: 2
+	flex: 2;
 }
-.about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
+
+#about h2, #contact h2 {
+	text-align: left;
 }
-.about-me__introduction {
+
+#about span {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	display:flex;
+	padding-bottom: 15px;
 }
-#about-me p {
+
+#about p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	padding-top: 2em;
+	min-height: 100vh;
 }
-.title{
-	text-align: center;
-	padding-block: 2em;
+
+.gallery {
+	margin : auto;
+	width : 70%;
 }
 .gallery .nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5a562b;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -135,28 +149,27 @@ body {
 	display: flex;
 	font-size: 24px;
 }
-
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
+	padding-top: 5em;
+	padding-bottom: 5em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 28px;
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
-
 #services {
-	margin: auto;
 	background-color: #A8D5D8 ;
 	position: relative;
 }
@@ -175,7 +188,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -213,7 +225,6 @@ body {
 }
 .form-container {
 	flex : 2;
-
 }
 form {
 	display: flex;
@@ -251,11 +262,11 @@ input[type="submit"] {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me__title {
+	h2 {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me span, #about-me p {
 		width: 100%;
 	}
 }
@@ -263,7 +274,6 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-
 	}
 	.picture {
 		width: 50%;
@@ -277,7 +287,7 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+	h2 {
 		text-align: center;
 		margin-top: 1em;
 	}
@@ -320,15 +330,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	nav {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	nav div, nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
@@ -353,4 +363,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-

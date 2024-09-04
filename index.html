@@ -15,7 +15,37 @@
 		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script defer src="./assets/maugallery.js"></script>
 		<script defer src="./assets/scripts.js"></script>
-		<script defer src="richsnippets.js" type="application/ld+json"></script>
+		<script type="application/ld+json">
+			{
+				"@context"= "https://schema.org",
+				"@type"= "LocalBusiness",
+				"name"= "Nina Carducci",
+				"image"= "",
+				"@id"= "",
+				"url"= "",
+				"telephone"= "05 56 67 78 89",
+				"address"= {
+				  "@type": "PostalAddress",
+				  "streetAddress": "68 avenue Alsace-Lorraine",
+				  "addressLocality": "Bordeaux",
+				  "postalCode": "33200",
+				  "addressCountry": "FR"
+				},
+				"openingHoursSpecification"= {
+				  "@type": "OpeningHoursSpecification",
+				  "dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				  ],
+				  "opens": "10:00",
+				  "closes": "19:00"
+				} 
+			}
+		</script>
+
 		<meta property="og:image" content="camera.webp"/>
 		<meta property="og:url" content="https://github.com/agathemathias/P5_Nina_Carducci.git"/>
 		<meta property="og:type" content="website"/>

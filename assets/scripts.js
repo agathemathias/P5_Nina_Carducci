@@ -8,7 +8,7 @@ $(document).ready(function() {
             xl: 3
         },
         lightBox: true,
-        lightboxId: 'myAwesomeLightbox',
+        lightboxId: 'galleryLightbox',
         showTags: true,
         tagsPosition: 'top'
     });

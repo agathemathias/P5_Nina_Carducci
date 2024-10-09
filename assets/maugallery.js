@@ -164,7 +164,7 @@
         collectionImages = [];
       "all" === boutonActif
         ? $(".item-column").each(function () {
-            $(this).children("img").length && l.push($(this).children("img"));
+            $(this).children("img").length && collectionImages.push($(this).children("img"));
           })
         : $(".item-column").each(function () {
             $(this).children("img").data("gallery-tag") === boutonActif &&
